@@ -145,3 +145,4 @@ screen -S loader
 ```
 CTRL A D
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+[Nguồn](https://github.com/USBBios/Joker-Mirai-Botnet-Source-V1)
