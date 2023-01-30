@@ -1,24 +1,24 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Cài đặt mọi thứ trên Ubuntu
+Cài đặt mọi thứ trên centos
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Sao chép & Dán này: 
 ```
-apt update -y
+yum update -y
 ```
 ```
-apt install epel-release -y
+yum install epel-release -y
 ```
 ```
-apt groupinstall "Development Tools" -y
+yum groupinstall "Development Tools" -y
 ```
 ```
-apt install gmp-devel -y
+yum install gmp-devel -y
 ```
 ```
 ln -s /usr/lib64/libgmp.so.3  /usr/lib64/libgmp.so.10
 ```
 ```
-apt install screen wget bzip2 gcc nano gcc-c++ electric-fence sudo git libc6-dev httpd xinetd tftpd tftp-server mysql mysql-server gcc glibc-static -y
+yum install screen wget bzip2 gcc nano gcc-c++ electric-fence sudo git libc6-dev httpd xinetd tftpd tftp-server mysql mysql-server gcc glibc-static -y
 ```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Sao chép & Dán này: 
