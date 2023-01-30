@@ -96,11 +96,11 @@ cd ~/
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Thay đổi IP:
 
-```/bot/huawei.c``` Tìm quên
+```/bot/huawei.c``` (dòng 271)
 
-```/bot/thinkphp.c``` Tìm quên
+```/bot/thinkphp.c``` (dòng 277)
 
-```/bot/zyxel_scanner.c``` Tìm quên
+```/bot/zyxel_scanner.c``` (dòng 278)
 
 ```/bot/includes.h```  (4 địa điểm)
 
