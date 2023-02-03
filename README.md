@@ -99,7 +99,7 @@ mv go /usr/local/go
 cd ~/
 ```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Thay đổi IP:
+Thay đổi IP ```173.232.146.173``` thành IP của VPS
 
 ```/bot/huawei.c``` (dòng 271)
 
@@ -109,7 +109,7 @@ Thay đổi IP:
 
 ```/bot/includes.h```  (4 địa điểm)
 
-```/cnc/main.go``` 
+```/cnc/main.go``` (để dấu , trong IP)
 
 ```/dlr/main.c```
 
