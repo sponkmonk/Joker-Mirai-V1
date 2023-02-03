@@ -119,19 +119,24 @@ Thay đổi IP:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Cài đặt mysql tạo mật khẩu root
 
-Sao chép & Dán này: 
 ```
-service mysqld start; mysql_secure_installation
+yum install mariadb-server -y
 ```
+```
+systemctl start mariadb.service
+```
+```
+mysql_secure_installation
+```
+VÀ THAY ĐỔI MẬT KHẨU MYSQL CỦA BẠN TRONG ```cnc/main.go```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Đăng nhập vào mysql:
 
-Sao chép & Dán này:  
 ```
-mysql -u root -p
+mysql -pMẬT KHẨU CỦA BẠN
 ```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Sao chép & Dán này:
+Tạo cơ sở dữ liệu:
 ```
 CREATE DATABASE Joker;
 use Joker;
