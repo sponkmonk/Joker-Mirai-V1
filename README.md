@@ -21,7 +21,7 @@ ln -s /usr/lib64/libgmp.so.3  /usr/lib64/libgmp.so.10
 yum install screen wget bzip2 gcc nano gcc-c++ electric-fence sudo git libc6-dev httpd xinetd tftpd tftp-server mysql mysql-server gcc glibc-static -y
 ```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Sao chép & Dán này: 
+Cài đặt Golang:
 
 ```
 rm -rf /usr/local/go
