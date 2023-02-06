@@ -109,9 +109,9 @@ Thay đổi IP ```173.232.146.173``` thành IP của VPS
 
 ```/bot/includes.h```  (4 địa điểm)
 
-```/cnc/main.go``` (để dấu , trong IP)
+```/cnc/main.go``` 
 
-```/dlr/main.c```
+```/dlr/main.c```  (để dấu , trong IP)
 
 ```/loader/src/main.c``` (Dòng 30, 31, Hai lần trên 42)
 
