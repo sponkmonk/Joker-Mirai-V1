@@ -197,7 +197,7 @@ yum install iptables;iptables -F;service iptables stop
 yum install httpd;service httpd restart  
 ```
 ```
-service mysqld restart
+service mariadb restart
 ```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ```
