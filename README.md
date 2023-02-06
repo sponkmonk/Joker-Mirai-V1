@@ -197,10 +197,13 @@ python payload.py; service httpd restart
 ```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ```
-iptables -F;service iptables stop 
+yum install firewalld;service firewalld stop
 ```
 ```
-service httpd restart  
+yum install iptables;iptables -F;service iptables stop 
+```
+```
+yum install httpd;service httpd restart  
 ```
 ```
 service mysqld restart
