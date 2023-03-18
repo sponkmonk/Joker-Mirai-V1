@@ -29,7 +29,6 @@ rm -rf /usr/local/go
 ```
 wget https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz
 ```
-nếu lỗi không tải xuống thì cài đặt wget
 ```
 sha256sum go1.10.3.linux-amd64.tar.gz
 ```
@@ -46,7 +45,6 @@ source ~/.bash_profile
 rm -rf go1.10.3.linux-amd64.tar.gz
 ```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Sao chép & Dán này: 
 ```
 mkdir /etc/xcompile
 cd /etc/xcompile
